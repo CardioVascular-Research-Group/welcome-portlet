@@ -1,0 +1,119 @@
+/* index page unique styles */
+
+.welcomeMain {
+	font-family:Calibri; 
+	min-width:400px; 
+	height:525px; 
+	width:90%; 
+	background-color:#fdf6e3;
+}
+
+.section_text {
+
+	margin:auto;
+	font-weight:bold; 
+	font-size:16pt; 
+	color:#333;
+}
+
+.heading_text {
+	font-weight:bold; 
+	color:#333;
+	font-size:11pt;
+}
+
+.description_text {
+	font-weight:200; 
+	color:#333;
+	font-size:11pt; 
+}
+
+.topBlock {
+	float:right;
+	height:120px; 
+	width:47%
+}
+
+.welcomeGroup {
+	position: relative; 
+	border:10px; 
+	top:10px; 
+	margin: 10px 2%; 
+}
+
+.upload_panel {
+	position:relative;  
+	float:left;
+	height:160px; 
+	width:120px;
+	top:10px; 
+}
+
+.uploadGroup {
+	position:relative;
+	margin:auto;
+	float:left;
+	height:50%; 
+	left:8px; 
+	width:380px; 
+	top:28px;
+}
+
+.welcomeImage {
+	position:relative; 
+	float:left;
+	height:100px; 
+	top:8px; 
+	width:100px;
+}
+
+.top {
+    z-index: 1972;
+    filter: alpha(opacity = 85);
+    opacity: 0.85;
+    padding: 50px 0 0 50px;
+    -webkit-box-shadow: 4px 4px 4px 4px rgba(4, 4, 4, .30);
+    box-shadow: 4px 4px 4px 4px rgba(4, 4, 4, .30);
+}
+
+.ui-panel {
+ /*   font-size: 85% !important; 
+    font-family: helvetica; */
+    overflow: hidden;
+    font-family: Calibri;
+}
+
+.centered {
+    margin: 0px auto;
+}
+
+.ui-growl { z-index:13000; right: 20px; top: 30%; }
+
+
+.ui-treenode-label{
+font-size:11pt;
+size:11pt;
+border:0!important;
+border-size:0!important;
+font-family: helvetica!important;
+}
+
+.template-upload {
+font-size:11pt;
+size:11pt;
+border:0!important;
+border-size:0!important;
+font-family: Calibri;
+}
+
+.ui-button-text{
+font-size:8pt;
+size:8pt;
+border:0!important;
+border-size:0!important;
+font-family: helvetica!important;
+}
+
+#j_idt2:formUpload {
+    height: 500px;
+}
