@@ -8,82 +8,76 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 	<h:head />
-	<h:body>
+	<h:body id="bodyLayout" style=" min-height:550px; height:auto !important; height:570px;">
 
-	<h:panelGroup layout="block" styleClass="backgroundofContent">
-		<p:layout id="uploadLayout" style=" height:550px; top:20px">
-			<p:layoutUnit position="center" styleClass="welcomeMain">
-				<h:panelGroup layout="block" styleClass="welcomeGroup">
+		<p:layout id="uploadLayout" style=" min-height:525px; height:auto !important; height:550px;">
+			<p:layoutUnit position="center" styleClass="welcomeMain" >
 				
-					<p:panel header="Upload and Analyze Waveforms" style="height:220px;">
+				<h:panelGroup layout="block" styleClass="welcomeGroup">
+					<p:panel header="Upload and Analyze Waveforms">
 						<h:panelGroup id="welcomeUploadPanel" layout="block" styleClass="uploadPanel">
 							<h:graphicImage value="/img/medical-laptop-icon2.png" styleClass="welcomeImage"/>
 						</h:panelGroup>
 
 						<h:panelGroup id="blockHomepageTopLeft" layout="block" styleClass="uploadGroup">
-							<f:verbatim><br/><br /></f:verbatim>
 							<h:outputText styleClass="section_text"	value="Upload and analyze your ECG waveforms" />
 						</h:panelGroup>
 
 						<h:panelGroup id="blockHomepageTop" layout="block" styleClass="topBlock" right="120px" >
-							<f:verbatim><br /></f:verbatim>
+							<f:verbatim></f:verbatim>
 							<h:outputText styleClass="heading_text"	value="Waveform Upload:" />
-							<f:verbatim><br /><br /></f:verbatim>
-							<h:outputText styleClass="description_text"	value="•  Secure transfer to a password-protected server" />
-							<f:verbatim><br /><br /><br /></f:verbatim>
-							<h:outputText value="Waveform Analysis:" styleClass="heading_text" />
-							<f:verbatim><br /><br /></f:verbatim>
-							<h:outputText styleClass="description_text" value="•   Several open-source analysis methods available, including Physionet signal processing" />
 							<f:verbatim><br /></f:verbatim>
+							<h:outputText styleClass="description_text"	value="• Secure transfer to a password-protected server" />
+							<f:verbatim><br /></f:verbatim>
+							<h:outputText value="Waveform Analysis:" styleClass="heading_text" />
+							<f:verbatim><br /></f:verbatim>
+							<h:outputText styleClass="description_text" value="• Several open-source analysis methods available, including Physionet signal processing" />
+							<f:verbatim></f:verbatim>
 						</h:panelGroup>
 					</p:panel>
 					
-					<p:panel header="Visualize Waveforms" style="height:142px;">
+					<p:panel header="Visualize Waveforms" >
 						<h:panelGroup id="welcomeVisualizePanel" layout="block" styleClass="uploadPanel">
 								<h:graphicImage value="/img/medical-device-icon.png" styleClass="welcomeImage"/>
 						</h:panelGroup>
 						
 						<h:panelGroup id="blockHomepageMIddleLeft" layout="block" styleClass="uploadGroup">
-							<f:verbatim><br/><br /></f:verbatim>
 							<h:outputText styleClass="section_text"	value="Visualize and Annotate Waveforms" />
 						</h:panelGroup>
 
 						<h:panelGroup id="blockHomepageMiddle" layout="block" styleClass="topBlock">
-							<f:verbatim><br /></f:verbatim>
 							<h:outputText value="Waveform Visualization:" styleClass="heading_text"/>
-							<f:verbatim><br/><br /></f:verbatim>
-							<h:outputText styleClass="description_text" value="•   Displays all 12 leads within an ECG dataset in a view comparable to paper ECGs"/>
 							<f:verbatim><br /></f:verbatim>
-							<h:outputText styleClass="description_text"	value="•   Allows individual leads’ display for automated and manual annotation display"/>
+							<h:outputText styleClass="description_text" value="• Displays all 12 leads within an ECG dataset in a view comparable to paper ECGs"/>
+							<f:verbatim><br /></f:verbatim>
+							<h:outputText styleClass="description_text"	value="• Allows individual leads’ display for automated and manual annotation display"/>
 							<f:verbatim><br /></f:verbatim>
 						</h:panelGroup>
 					</p:panel>
 
-					<p:panel header="Download  Waveforms" style="height:126px;">
-						<h:panelGroup layout="block" id="ontologyPannel" styleClass="uploadPanel">
+					<p:panel header="Download  Waveforms">
+						<h:panelGroup layout="block" id="ontologyPanel" styleClass="uploadPanel">
 							<h:graphicImage styleClass="welcomeImage" value="/img/medical-upload-icon.png"/>
 						</h:panelGroup>
-
 						<h:panelGroup id="blockHomepageBottomLeft" layout="block" styleClass="uploadGroup">
-							<f:verbatim><br/><br /></f:verbatim>
 							<h:outputText styleClass="section_text"	value="Download files with Complete Analysis" />
 							<f:verbatim><br /></f:verbatim>
 						</h:panelGroup>
 
 						<h:panelGroup id="blockHomepageBottom" layout="block" styleClass="topBlock">
-							<f:verbatim><br /></f:verbatim>
 							<h:outputText value="Waveform Download:" styleClass="heading_text"/>
-							<f:verbatim><br/><br /></f:verbatim>
-							<h:outputText styleClass="description_text" value="•   Download and Browse All Uploaded Files"/>
-							<f:verbatim><br/><br /></f:verbatim>
-							<h:outputText styleClass="description_text" value="•   Download Analysis Results created by an Algorithm Service"/>
+							<f:verbatim><br/></f:verbatim>
+							<h:outputText styleClass="description_text" value="• Download and Browse All Uploaded Files"/>
+							<f:verbatim><br/></f:verbatim>
+							<h:outputText styleClass="description_text" value="• Download Analysis Results created by an Algorithm Service"/>
 							<f:verbatim><br /></f:verbatim>
 						</h:panelGroup>
 					</p:panel>
+				
 				</h:panelGroup>
 			</p:layoutUnit>
 
-			<p:layoutUnit position="east" resizable="true" size="90" style="background-color:#fdf6e3;" minSize="80" maxSize="200">
+			<p:layoutUnit position="east" resizable="true" size="90" minSize="80" maxSize="200" styleClass="helpBlock">
 				<h:form id="helpbtn">
 					<p:commandButton id="defaultLogout" alt="Help" icon="ui-icon-key"
 						value="Help" onclick="bar.hide();" type="button"
@@ -92,6 +86,5 @@
 			</p:layoutUnit>
 		</p:layout>
 
-	</h:panelGroup>
 	</h:body>
 </f:view>
