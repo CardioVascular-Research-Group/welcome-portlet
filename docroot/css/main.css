@@ -26,7 +26,7 @@
 	font-weight:bold; 
 	color:#333;
 	font-size:11pt;
-	line-height:2.2em;
+	line-height:1.8em;
 }
 
 .description_text {
@@ -46,17 +46,7 @@
 	display:inline-block;
 	position:relative;  
 	float:left; 
-	width:22%;
-	top:8px; 
-}
-
-.uploadGroup {
-	display:inline-block;
-	position:relative;
-	float:left;
-	width:22%;
-	height:100%;
-	top:10px; 
+	width:20%;
 }
 
 .topBlock {
@@ -64,15 +54,14 @@
 	position:relative;
 	float:left;
 	margin-left:25px; 
-	width:50%;
+	width:75%;
 }
 
 .welcomeImage {
 	position:relative; 
 	float:left;
 	height:100px;
-	width:100px; 
-	top:8px;
+	width:100px;
 	left:20px;
 }
 
@@ -94,6 +83,9 @@
     min-height:165px;
     height:auto !important;
     height:185px;
+}
+.ui-panel-title{
+	font-size:1.5em;
 }
 
 .centered {
