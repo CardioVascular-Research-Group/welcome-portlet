@@ -11,8 +11,7 @@
 	<h:body id="bodyLayout" style=" min-height:550px; height:auto !important; height:570px;">
 
 		<p:layout id="uploadLayout" style=" min-height:525px; height:auto !important; height:550px;">
-			<p:layoutUnit position="center" styleClass="welcomeMain" >
-				
+			<p:layoutUnit position="center" resizable="true" styleClass="welcomeMain" >
 				<h:panelGroup layout="block" styleClass="welcomeGroup">
 					<p:panel header="Upload and analyze your ECG waveforms">
 						<h:panelGroup id="welcomeUploadPanel" layout="block" styleClass="uploadPanel">
@@ -41,9 +40,13 @@
 						<h:panelGroup id="blockHomepageMiddle" layout="block" styleClass="topBlock">
 							<h:outputText value="Waveform Visualization:" styleClass="heading_text"/>
 							<f:verbatim><br /></f:verbatim>
-							<h:outputText styleClass="description_text" value="• Displays all 12 leads within an ECG dataset in a view comparable to paper ECGs"/>
+							<h:outputText styleClass="description_text" value="• Displays all leads within an ECG dataset in a view similar to paper ECGs"/>
 							<f:verbatim><br /></f:verbatim>
 							<h:outputText styleClass="description_text"	value="• Allows individual leads’ display for automated and manual annotation display"/>
+							<f:verbatim><br /></f:verbatim>
+							<h:outputText value="Waveform Annotation:" styleClass="heading_text"/>
+							<f:verbatim><br /></f:verbatim>
+							<h:outputText styleClass="description_text" value="• Manually annotate Waveform features"/>
 							<f:verbatim><br /></f:verbatim>
 						</h:panelGroup>
 					</p:panel>
@@ -56,9 +59,9 @@
 						<h:panelGroup id="blockHomepageBottom" layout="block" styleClass="topBlock">
 							<h:outputText value="Waveform Download:" styleClass="heading_text"/>
 							<f:verbatim><br/></f:verbatim>
-							<h:outputText styleClass="description_text" value="• Download and Browse All Uploaded Files"/>
+							<h:outputText styleClass="description_text" value="• Browse and download all files"/>
 							<f:verbatim><br/></f:verbatim>
-							<h:outputText styleClass="description_text" value="• Download Analysis Results created by an Algorithm Service"/>
+							<h:outputText styleClass="description_text" value="• Download Analysis Results"/>
 							<f:verbatim><br /></f:verbatim>
 						</h:panelGroup>
 					</p:panel>
@@ -66,7 +69,7 @@
 				</h:panelGroup>
 			</p:layoutUnit>
 
-			<p:layoutUnit position="east" resizable="true" size="90" minSize="80" maxSize="200" styleClass="helpBlock">
+			<p:layoutUnit position="east" collapsible="true" resizable="true" size="90" minSize="80" maxSize="200" styleClass="helpBlock">
 				<h:form id="helpbtn">
 					<p:commandButton id="defaultLogout" alt="Help" icon="ui-icon-key"
 						value="Help" onclick="bar.hide();" type="button"
