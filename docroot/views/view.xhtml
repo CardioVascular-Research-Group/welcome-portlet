@@ -2,81 +2,58 @@
 
 <f:view
 	xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:c="http://java.sun.com/jsp/jstl/core"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 	<h:head />
-	<h:body id="bodyLayout" style=" min-height:550px; height:auto !important; height:570px;">
-
-		<p:layout id="uploadLayout" style=" min-height:525px; height:auto !important; height:550px;">
-			<p:layoutUnit position="center" resizable="true" styleClass="welcomeMain" >
-				<h:panelGroup layout="block" styleClass="welcomeGroup">
-					<p:panel header="Upload and analyze your ECG waveforms">
-						<h:panelGroup id="welcomeUploadPanel" layout="block" styleClass="uploadPanel">
-							<h:graphicImage value="/img/medical-laptop-icon2.png" styleClass="welcomeImage"/>
-						</h:panelGroup>
-						
-						<h:panelGroup id="blockHomepageTop" layout="block" styleClass="topBlock" right="120px" >
-							<f:verbatim></f:verbatim>
-							<h:outputText styleClass="heading_text"	value="Waveform Upload:" />
-							<f:verbatim><br /></f:verbatim>
-							<h:outputText styleClass="description_text"	value="• Secure transfer to a password-protected server" />
-							<f:verbatim><br /></f:verbatim>
-							<h:outputText value="Waveform Analysis:" styleClass="heading_text" />
-							<f:verbatim><br /></f:verbatim>
-							<h:outputText styleClass="description_text" value="• Several open-source analysis methods available, including Physionet signal processing" />
-							<f:verbatim></f:verbatim>
-						</h:panelGroup>
-					</p:panel>
-					
-					<p:panel header="Visualize and Annotate Waveforms" >
-						<h:panelGroup id="welcomeVisualizePanel" layout="block" styleClass="uploadPanel">
-								<h:graphicImage value="/img/medical-device-icon.png" styleClass="welcomeImage"/>
-						</h:panelGroup>
-						
-
-						<h:panelGroup id="blockHomepageMiddle" layout="block" styleClass="topBlock">
-							<h:outputText value="Waveform Visualization:" styleClass="heading_text"/>
-							<f:verbatim><br /></f:verbatim>
-							<h:outputText styleClass="description_text" value="• Displays all leads within an ECG dataset in a view similar to paper ECGs"/>
-							<f:verbatim><br /></f:verbatim>
-							<h:outputText styleClass="description_text"	value="• Allows individual leads’ display for automated and manual annotation display"/>
-							<f:verbatim><br /></f:verbatim>
-							<h:outputText value="Waveform Annotation:" styleClass="heading_text"/>
-							<f:verbatim><br /></f:verbatim>
-							<h:outputText styleClass="description_text" value="• Manually annotate Waveform features"/>
-							<f:verbatim><br /></f:verbatim>
-						</h:panelGroup>
-					</p:panel>
-
-					<p:panel header="Download files with Complete Analysis">
-						<h:panelGroup layout="block" id="ontologyPanel" styleClass="uploadPanel">
-							<h:graphicImage styleClass="welcomeImage" value="/img/medical-upload-icon.png"/>
-						</h:panelGroup>
-
-						<h:panelGroup id="blockHomepageBottom" layout="block" styleClass="topBlock">
-							<h:outputText value="Waveform Download:" styleClass="heading_text"/>
-							<f:verbatim><br/></f:verbatim>
-							<h:outputText styleClass="description_text" value="• Browse and download all files"/>
-							<f:verbatim><br/></f:verbatim>
-							<h:outputText styleClass="description_text" value="• Download Analysis Results"/>
-							<f:verbatim><br /></f:verbatim>
-						</h:panelGroup>
-					</p:panel>
-				
-				</h:panelGroup>
-			</p:layoutUnit>
-
-			<p:layoutUnit position="east" collapsible="true" resizable="true" size="90" minSize="80" maxSize="200" styleClass="helpBlock">
-				<h:form id="helpbtn">
-					<p:commandButton id="defaultLogout" alt="Help" icon="ui-icon-key"
-						value="Help" onclick="bar.hide();" type="button"
-						style="left:2px; top:6px;"/>
-				</h:form>
-			</p:layoutUnit>
-		</p:layout>
-
+	<h:body>
+    
+     <p:panel header="Upload and analyze your ECG waveforms">  
+		<h:panelGroup styleClass="leftImageBlock">
+			<h:graphicImage value="/img/waveform_upload-175x195.png" styleClass="welcomeImage"/>
+		</h:panelGroup>
+		<h:panelGroup styleClass="rightTextBlock">
+			<h:outputText styleClass="heading_text"	value="Waveform Upload:" />
+				<ul>
+					<li><h:outputText value="Secure transfer to a password-protected server" /></li>
+				</ul>
+				<h:outputText value="Waveform Analysis:" styleClass="heading_text" />
+				<ul>
+					<li><h:outputText value="Several open-source analysis methods available, including Physionet signal processing" /></li>
+				</ul>
+		</h:panelGroup>  
+    </p:panel>  
+    
+     <p:panel header="Visualize and Annotate Waveforms">  
+		<h:panelGroup styleClass="leftImageBlock">
+			<h:graphicImage value="/img/waveform_visualize-175x195.png" styleClass="welcomeImage"/>
+		</h:panelGroup>
+		<h:panelGroup styleClass="rightTextBlock">
+			<h:outputText value="Waveform Visualization:" styleClass="heading_text" />
+			<ul>
+				<li><h:outputText value="Displays all leads within an ECG dataset in a view similar to paper ECGs" /></li>
+				<li><h:outputText value="Allows individual leads’ display for automated and manual annotation display" /></li>
+			</ul>
+			<h:outputText value="Waveform Annotation:" styleClass="heading_text" />
+			<ul>
+				<li><h:outputText value="Manually annotate Waveform features" /></li>
+			</ul>
+		</h:panelGroup>  
+    </p:panel>  
+    
+	<p:panel header="Download files with Complete Analysis">  
+		<h:panelGroup styleClass="leftImageBlock">
+			<h:graphicImage value="/img/waveform_download-175x195.png" styleClass="welcomeImage"/>
+		</h:panelGroup>	
+		<h:panelGroup styleClass="rightTextBlock">
+			<h:outputText value="Waveform Download:" styleClass="heading_text" />
+			<ul>
+				<li><h:outputText value="Browse and download all files" /></li>
+				<li><h:outputText value="Download Analysis Results" /></li>
+			</ul>
+		</h:panelGroup>	
+	</p:panel>  
+	
 	</h:body>
 </f:view>

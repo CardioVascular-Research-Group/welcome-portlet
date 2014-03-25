@@ -1,124 +1,30 @@
-/* index page unique styles */
-
-/* #uploadLayout {
-	height:500px;
-} */
-
-.welcomeMain {
-	min-width:400px; 
-	/* height:525px; */ 
-	width:90%; 
+.leftImageBlock {
+	display:inline-block;
+	padding:10px 20px;
+	margin:10px;
 }
-.welcomeMain, .helpBlock {
-	background-color:#fdf6e3;
-	min-height:520px;
-	height:auto !important;
-	height:545px;
+
+.rightTextBlock {
+	display:inline-block;
+    vertical-align: top;
+	padding:10px;
+	margin:10px;
 }
-.section_text {
-	margin:auto;
-	font-weight:bold; 
-	font-size:16pt; 
-	color:#333;
+.welcomeImage {
 }
 
 .heading_text {
 	font-weight:bold; 
-	color:#333;
-	font-size:11pt;
-	line-height:1.8em;
+	color:#222222;
+	font-size:14px;
+	line-height:1.2em;
 }
-
+.heading_text ul{
+	margin:4px 4px 4px 8px;
+}
 .description_text {
-	font-weight:200; 
-	color:#333;
-	font-size:11pt; 
+	font-weight:normal; 
+	color:#222222;
+	font-size:12px;
+	line-height:1.6em;
 }
-
-/* .welcomeGroup {
-	position: relative; 
-	border:10px; 
-	top:10px; 
-	margin: 10px 2%; 
-} */
-
-.uploadPanel {
-	display:inline-block;
-	position:relative;  
-	float:left; 
-	width:15%;
-}
-
-.topBlock {
-	display:inline-block;
-	position:relative;
-	float:left;
-	margin-left:35px; 
-	width:80%;
-}
-
-.welcomeImage {
-	position:relative; 
-	float:left;
-	height:90px;
-	width:90px;
-	left:25px;
-}
-
-/* .top {
-    z-index: 1972;
-    filter: alpha(opacity = 85);
-    opacity: 0.85;
-    padding: 50px 0 0 50px;
-    -webkit-box-shadow: 4px 4px 4px 4px rgba(4, 4, 4, .30);
-    box-shadow: 4px 4px 4px 4px rgba(4, 4, 4, .30);
-} */
-
-.ui-panel {
- /*   font-size: 85% !important; 
-    font-family: helvetica; */
-    display:block;
-    overflow: hidden;
-    font-family: Calibri;
-    min-height:165px;
-    height:auto !important;
-    height:185px;
-}
-.ui-panel-title{
-	font-size:1.5em;
-}
-
-.centered {
-    margin: 0px auto;
-}
-
-/* .ui-growl { z-index:13000; right: 20px; top: 30%; } */
-
-
-/* .ui-treenode-label{
-font-size:11pt;
-size:11pt;
-border:0!important;
-border-size:0!important;
-font-family: helvetica!important;
-} */
-
-.template-upload {
-font-size:11pt;
-size:11pt;
-border:0!important;
-border-size:0!important;
-font-family: Calibri;
-}
-
-.ui-button-text{
-font-size:8pt;
-size:8pt;
-border:0 !important;
-border-size:0 !important;
-font-family: helvetica !important;
-}
-
-/* #j_idt2:formUpload {
-    height: 500px;
-} */
