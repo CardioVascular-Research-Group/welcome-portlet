@@ -7,51 +7,49 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 	<h:head />
-	<h:body>
-    
-     <p:panel header="Upload and analyze your ECG waveforms">  
-		<h:panelGroup styleClass="leftImageBlock">
+	<h:body> 
+	    <p:panel header="Upload and analyze your ECG waveforms">  
+			<h:panelGroup styleClass="leftImageBlock">
 			<h:graphicImage value="/img/waveform_upload-150x195.png" styleClass="welcomeImage"/>
-		</h:panelGroup>
-		<h:panelGroup styleClass="rightTextBlock">
-			<h:outputText styleClass="heading_text"	value="Waveform Upload:" />
-				<ul>
-					<li><h:outputText value="Secure transfer to a password-protected server" /></li>
-				</ul>
-				<h:outputText value="Waveform Analysis:" styleClass="heading_text" />
-				<ul>
-					<li><h:outputText value="Several open-source analysis methods available, including Physionet signal processing" /></li>
-				</ul>
-		</h:panelGroup>  
-    </p:panel>  
-    
-     <p:panel header="Visualize and Annotate Waveforms">  
-		<h:panelGroup styleClass="leftImageBlock">
-			<h:graphicImage value="/img/waveform_visualize-150x195.png" styleClass="welcomeImage"/>
-		</h:panelGroup>
-		<h:panelGroup styleClass="rightTextBlock">
+			</h:panelGroup>
+			<h:panelGroup styleClass="rightTextBlock">
+				<h:outputText styleClass="heading_text"	value="Waveform Upload:" />
+					<ul>
+						<li><h:outputText value="Secure transfer to a password-protected server" /></li>
+					</ul>
+					<h:outputText value="Waveform Analysis:" styleClass="heading_text" />
+					<ul>
+						<li><h:outputText value="Several open-source analysis methods available, including Physionet signal processing" /></li>
+					</ul>
+			</h:panelGroup>  
+	    </p:panel>  
+	    <p:panel header="Visualize and Annotate Waveforms">  
+			<h:panelGroup styleClass="leftImageBlock">
+				<h:graphicImage value="/img/waveform_visualize-150x195.png" styleClass="welcomeImage"/>
+			</h:panelGroup>
+			<h:panelGroup styleClass="rightTextBlock">
 			<h:outputText value="Waveform Visualization:" styleClass="heading_text" />
-			<ul>
-				<li><h:outputText value="Displays all leads within an ECG dataset in a view similar to paper ECGs" /></li>
-				<li><h:outputText value="Allows individual leads’ display for automated and manual annotation display" /></li>
-			</ul>
+				<ul>
+					<li><h:outputText value="Displays all leads within an ECG dataset in a view similar to paper ECGs" /></li>
+					<li><h:outputText value="Allows individual leads’ display for automated and manual annotation display" /></li>
+				</ul>
 			<h:outputText value="Waveform Annotation:" styleClass="heading_text" />
-			<ul>
-				<li><h:outputText value="Manually annotate Waveform features" /></li>
-			</ul>
-		</h:panelGroup>  
-    </p:panel>  
-	<p:panel header="Download files with Complete Analysis">  
-		<h:panelGroup styleClass="leftImageBlock">
+				<ul>
+					<li><h:outputText value="Manually annotate Waveform features" /></li>
+				</ul>
+			</h:panelGroup>  
+	    </p:panel>  
+		<p:panel header="Download files with Complete Analysis">  
+			<h:panelGroup styleClass="leftImageBlock">
 			<h:graphicImage value="/img/waveform_download-150x195.png" styleClass="welcomeImage"/>
-		</h:panelGroup>	
-		<h:panelGroup styleClass="rightTextBlock">
-			<h:outputText value="Waveform Download:" styleClass="heading_text" />
-			<ul>
-				<li><h:outputText value="Browse and download all files" /></li>
-				<li><h:outputText value="Download Analysis Results" /></li>
-			</ul>
-		</h:panelGroup>	
-	</p:panel>  
+			</h:panelGroup>	
+			<h:panelGroup styleClass="rightTextBlock">
+				<h:outputText value="Waveform Download:" styleClass="heading_text" />
+				<ul>
+					<li><h:outputText value="Browse and download all files" /></li>
+					<li><h:outputText value="Download Analysis Results" /></li>
+				</ul>
+			</h:panelGroup>	
+		</p:panel>  
 	</h:body>
 </f:view>
